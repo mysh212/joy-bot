@@ -3,3 +3,4 @@
 t.*
 *.bkp
 *.json
+__pycache__
