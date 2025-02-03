@@ -22,10 +22,10 @@
 
 #### 依賴
 
-見 ***Requirements*** `requirement.txt`
+見 ***Requirements*** `requirements.txt`
 
 ```bash
-python3 -m pip install -r requirement.txt
+python3 -m pip install -r requirements.txt
 ```
 
 #### 參數
@@ -70,3 +70,5 @@ python3 main.py
 也相當歡迎內捲的各位發 ***PR*** 來貢獻資料庫
 
 **反內捲從你我做起**
+
+<!-- 純屬玩笑 請勿當真 -->
