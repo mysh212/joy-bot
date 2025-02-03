@@ -18,9 +18,7 @@
 
 ## 使用方式
 
-### 安裝
-
-#### 依賴
+### 依賴
 
 見 ***Requirements*** `requirements.txt`
 
@@ -28,7 +26,7 @@
 python3 -m pip install -r requirements.txt
 ```
 
-#### 參數
+### 參數
 
 由於重複打帳號密碼容易使手部發炎，因此必須得有 **自動登入** 功能。
 
@@ -41,7 +39,7 @@ password
 
 其中 ***username*** 為使用者名稱， ***password*** 為密碼，注意請以換行區隔。
 
-#### 執行
+### 執行
 
 使用
 
