@@ -16,6 +16,10 @@ DELAY = 2
 driver = lib.driver.get_driver()
 
 def auto_login():
+    if not exist('.env'):
+        warning('.env file not found. skipping auto-login.')
+        lib.driver.get_login_page(driver)
+        return
     username, password = read_from_file('.env').split('\n')[:2]
 
     # Goto homepage
@@ -50,6 +54,7 @@ def auto():
             now = solution.get(_id, -1)
             # debug(ans[i][1])
             while now == -1:
+                problem.try_play(driver)
                 sel = input('Input the answer: ')
                 try:
                     sel = int(sel)
@@ -65,10 +70,11 @@ def auto():
             if i == n - 1:
                 break
             problem.next_page(driver)
-            store.write_solution(solution)
+        store.write_solution(solution)
 
 def main():
     auto()
+    info('', end = '');input('Input any key to quit')
     # ouob
 
 if __name__ == '__main__':

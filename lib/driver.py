@@ -8,7 +8,12 @@ import json
 def get_driver():
     #Simple assignment
     from selenium.webdriver import Chrome
-    driver = Chrome()
+
+    from selenium.webdriver import ChromeOptions
+    pre = ChromeOptions()
+    pre.headless = True
+
+    driver = Chrome(options = pre)
 
     return driver
 

@@ -39,3 +39,10 @@ def init(driver):
 
     # debug(ans)
     return ans
+
+def try_play(driver):
+    try:
+        driver.execute_script("document.querySelector('audio').play();");
+        return True
+    except:
+        return False
